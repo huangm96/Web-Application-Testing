@@ -1,0 +1,16 @@
+.App {
+  text-align: center;
+  
+}
+h1{
+  font-size: 5rem;
+}
+h2{
+  font-size: 3rem;
+}
+button{
+  margin: 50px 20px;
+  width: 6rem;
+  height: 3rem;
+  font-size: 1.5rem;
+}
