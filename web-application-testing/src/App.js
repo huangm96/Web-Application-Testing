@@ -3,6 +3,9 @@ import Display from "./components/Display";
 import Dashboard from "./components/Dashboard";
 import "./App.css";
 
+export const addScore = (currentNum) => {
+  return currentNum +1
+}
 function App() {
   const [balls, setBalls] = useState(0);
   const [strikes, setStrikes] = useState(0);
@@ -15,13 +18,13 @@ function App() {
       if (strikes === 2) {
         setStrikes(0);
       } else {
-        setStrikes(strikes + 1);
+        setStrikes(addScore(strikes));
       }
     } else if (type === "ball") {
       if (balls === 3) {
         setBalls(0);
       } else {
-        setBalls(balls + 1);
+        setBalls(addScore(balls));
       }
     } else if (type === "foul") {
       if (strikes === 0) {
