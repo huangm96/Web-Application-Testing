@@ -39,7 +39,7 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Football Record App</h1>
+      <h1>Baseball Record App</h1>
       <Display balls={balls} strikes={strikes} />
       <Dashboard handleScoresChange={handleScoresChange} />
     </div>
